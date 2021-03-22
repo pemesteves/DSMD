@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.23/win64" 1616432655
+<REAPER_PROJECT 0.1 "6.25/win64" 1616454928
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -14,9 +14,9 @@
   TIMEMODE 1 5 -1 30 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 29.86056733976355
-  ZOOM 35.85960413809074 294 0
-  VZOOMEX 6 240
+  CURSOR 0
+  ZOOM 12.85911208940574 0 0
+  VZOOMEX 7 0
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -55,13 +55,13 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0.5 0
-  SELECTION2 0.5 0
+  SELECTION 0 54.14291666666666
+  SELECTION2 0 54.14291666666666
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
   MASTERMUTESOLO 0
-  MASTERTRACKVIEW 0 0.6667 0.5 0.5 -1 -1 -1 0 0 0 -1 -1 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 -1 -1 0 0 0 -1 -1 0
   MASTERHWOUT 0 0 1 0 0 0 0 -1
   MASTER_NCH 2 2
   MASTER_VOLUME 1 0 -1 -1 1
@@ -96,7 +96,7 @@
     PLAYOFFS 0 1
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 -1
     FREEMODE 0
     SEL 0
     REC 0 0 1 0 0 0 0
@@ -134,7 +134,7 @@
     <ITEM
       POSITION 15.12
       SNAPOFFS 0
-      LENGTH 14.38
+      LENGTH 9.88
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0 0
@@ -153,6 +153,28 @@
         FILE "images\forest_animals.png"
       >
     >
+    <ITEM
+      POSITION 36
+      SNAPOFFS 0
+      LENGTH 10
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C0579364-1A9E-44E2-AC7E-89E319323142}
+      IID 40
+      NAME sam_neill_court_think.png
+      VOLPAN 1 0 1 -1
+      SOFFS 0.57200000004377
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0040700D-7FA1-4F13-A639-E5F79F71E680}
+      <SOURCE VIDEO
+        FILE "images\sam_neill_court_think.png"
+      >
+    >
   >
   <TRACK {49A025D8-57C5-4343-B799-65ABAB7222A2}
     NAME forest
@@ -165,7 +187,7 @@
     PLAYOFFS 0 1
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 -1
     FREEMODE 0
     SEL 0
     REC 0 0 1 0 0 0 0
@@ -200,6 +222,50 @@
         FILE "images\forest.png"
       >
     >
+    <ITEM
+      POSITION 24.5
+      SNAPOFFS 0
+      LENGTH 12.63943266018759
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6B5C1C83-EDCE-465C-98E4-BAE64DCD5AE5}
+      IID 29
+      NAME Jurassic-Park-Sam-Neill.png
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F86401BA-8DCE-4E85-AF2E-2EE0178C556B}
+      <SOURCE VIDEO
+        FILE "images\sam_neill_jp.png"
+      >
+    >
+    <ITEM
+      POSITION 46
+      SNAPOFFS 0
+      LENGTH 8.14291666666666
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {FEE2BE90-7961-4C3C-AD09-834DD2402D97}
+      IID 42
+      NAME sam_neill_court.png
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {75AC36B9-45DB-494F-AD42-81D1CB151E80}
+      <SOURCE VIDEO
+        FILE "images\sam_neill_court.png"
+      >
+    >
   >
   <TRACK {DB721492-7F20-43D7-9D1B-450353A1CDAD}
     NAME waterdrop
@@ -212,7 +278,7 @@
     PLAYOFFS 0 1
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 -1
     FREEMODE 0
     SEL 0
     REC 0 0 1 0 0 0 0
@@ -313,6 +379,50 @@
         FILE "sounds\waterdrop.wav"
       >
     >
+    <ITEM
+      POSITION 4.5
+      SNAPOFFS 0
+      LENGTH 0.39289583333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {755D9718-2714-4B6E-A383-7425459A3598}
+      IID 14
+      NAME waterdrop.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {100EB914-A8E2-4D4C-B7D4-C2B53DB98B86}
+      <SOURCE WAVE
+        FILE "sounds\waterdrop.wav"
+      >
+    >
+    <ITEM
+      POSITION 6
+      SNAPOFFS 0
+      LENGTH 0.39289583333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A39C3D02-56BE-499B-ACA1-955A7F8DCA75}
+      IID 14
+      NAME waterdrop.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {781F78F1-E467-4C52-AE7E-EC5A60C00029}
+      <SOURCE WAVE
+        FILE "sounds\waterdrop.wav"
+      >
+    >
   >
   <TRACK {8ABEF73F-BA72-4D6C-8E58-A83AF5DA7D94}
     NAME wind
@@ -325,7 +435,7 @@
     PLAYOFFS 0 1
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 -1
     FREEMODE 0
     SEL 0
     REC 0 0 1 0 0 0 0
@@ -341,7 +451,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 6
+      LENGTH 16
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0 0
@@ -372,7 +482,7 @@
     PLAYOFFS 0 1
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 -1
     FREEMODE 0
     SEL 0
     REC 0 0 1 0 0 0 0
@@ -386,13 +496,13 @@
     MIDIOUT -1
     MAINSEND 1 0
     <ITEM
-      POSITION 3
+      POSITION 4
       SNAPOFFS 0
-      LENGTH 14.12
+      LENGTH 42
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.895797 0 1 0 0 0
       MUTE 0 0
       SEL 0
       IGUID {DA706064-7EAE-4756-B454-2F9D582FB7C1}
@@ -419,7 +529,7 @@
     PLAYOFFS 0 1
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 -1
     FREEMODE 0
     SEL 0
     REC 0 0 1 0 0 0 0
@@ -435,11 +545,11 @@
     <ITEM
       POSITION 14.5
       SNAPOFFS 0
-      LENGTH 15.4
+      LENGTH 31.5
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
+      FADEOUT 1 8.946321 0 1 0 0 0
       MUTE 0 0
       SEL 0
       IGUID {3264FFA3-570E-4D13-B767-707CC5F59D75}
@@ -464,11 +574,11 @@
     MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
-    ISBUS 1 1
+    ISBUS 0 0
     BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 -1
     FREEMODE 0
-    SEL 0
+    SEL 1
     REC 0 0 1 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 0 0
@@ -482,11 +592,11 @@
     <ITEM
       POSITION 19
       SNAPOFFS 0
-      LENGTH 10.9
+      LENGTH 25
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
+      FADEOUT 2 7.761106 0 2 0 -1 -1
       MUTE 0 0
       SEL 0
       IGUID {2A9B2B03-BF7D-48E4-9200-6984A2B949DA}
@@ -502,8 +612,8 @@
       >
     >
   >
-  <TRACK {35B39D8A-F054-4D12-BD92-863809568F7F}
-    NAME sam_neill_jurassic_park1
+  <TRACK {35618AB0-5892-47E0-8C48-A01DEA3154E2}
+    NAME walla
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
@@ -511,41 +621,41 @@
     MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
-    ISBUS 2 -1
+    ISBUS 0 0
     BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 -1
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
-    TRACKID {35B39D8A-F054-4D12-BD92-863809568F7F}
+    TRACKID {35618AB0-5892-47E0-8C48-A01DEA3154E2}
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
     <ITEM
-      POSITION 29.86056733981241
+      POSITION 36
       SNAPOFFS 0
-      LENGTH 12.63943266018759
+      LENGTH 18.14291666666666
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
+      FADEIN 5 11.281647 0 5 0 0 0
+      FADEOUT 2 0.01 0 2 0 -1 -1
       MUTE 0 0
-      SEL 1
-      IGUID {6B5C1C83-EDCE-465C-98E4-BAE64DCD5AE5}
-      IID 29
-      NAME Jurassic-Park-Sam-Neill.png
+      SEL 0
+      IGUID {E16619A1-F3D9-4385-9521-052C098D9EDA}
+      IID 41
+      NAME walla.wav
       VOLPAN 1 0 1 -1
       SOFFS 0
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {F86401BA-8DCE-4E85-AF2E-2EE0178C556B}
-      <SOURCE VIDEO
-        FILE "images\Jurassic-Park-Sam-Neill.png"
+      GUID {92F2DD10-A8D6-4187-867F-3E7418B88FA3}
+      <SOURCE WAVE
+        FILE "sounds\walla.wav"
       >
     >
   >
