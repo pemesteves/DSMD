@@ -1,0 +1,216 @@
+<REAPER_PROJECT 0.1 "6.25/win64" 1617910012
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 1
+  ENVATTACH 1
+  POOLEDENVATTACH 0
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 600
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 2 -1 25 0 0 -1
+  VIDEO_CONFIG 0 0 256
+  PANMODE 3
+  CURSOR 2
+  ZOOM 140.75532579213572 0 0
+  VZOOMEX 18 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 25 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "" ""
+  <RECORD_CFG
+    ZXZhdxgAAA==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE ""
+  RENDER_PATTERN ""
+  RENDER_FMT 0 2 0
+  RENDER_1X 0
+  RENDER_RANGE 1 0 0 18 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 0
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 48000 1 0
+  <RENDER_CFG
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    FREQ 800 1600 1
+    BEATLEN 4
+    SAMPLES "" ""
+    PATTERN 2863311530 2863311529
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4
+  PLAYRATE 1 0 0.25 4
+  SELECTION 4.5 0
+  SELECTION2 4.5 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 -1 -1 0 0 0 -1 -1 0
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_FX 1
+  MASTER_SEL 0
+  <POOLEDENV
+    ID 1
+    NAME "1"
+    SRCLEN 1
+    LFO 0 0 0 0 0 0 0
+    PPT 0 0.3333405435 0 0 
+    PPT 0.999998 0.3333405435 0 0 
+  >
+  <MASTERPLAYSPEEDENV
+    EGUID {147A82D4-C1CD-46D8-8E94-389B8045C0C2}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {F0690E3F-D776-4B49-88B9-AB8A17292EC9}
+    ACT 0 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  <PROJBAY
+  >
+  <TRACK {496C52C9-BDF0-4E2D-BF2B-EAD0760C3E29}
+    NAME 413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {496C52C9-BDF0-4E2D-BF2B-EAD0760C3E29}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <VOLENV2
+      EGUID {55010C4A-CA99-4A3B-BEFD-FE43190F3DFF}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 0
+      DEFSHAPE 0 -1 -1
+      VOLTYPE 1
+      POOLEDENVINST 1 0 0.5 0 1 0 0.5 1 1 0 0 14 0 0 0.012 0
+      POOLEDENVINST 1 1.61412698412698 0.5 0 1 0 0.5 1 1 0 0 15 0 0 0.012 0
+      POOLEDENVINST 1 3.22825396825397 0.5 0 1 0 0.5 1 1 0 0 16 0 0 0.012 0
+      PT 0.500001 1 0
+    >
+    <FXCHAIN
+      WNDRECT 23 51 951 271
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS Liteon/pinknoisegen ""
+        0.000000 -6.000000 -6.000000 0.000000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {7F7E005A-809C-437A-B8B7-854F9A5F619B}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.61412698412698
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B4B2013E-A722-4B4C-9B0F-EDD8AE34C430}
+      IID 1
+      NAME 413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F8779C0A-1495-4BC6-B417-D2AE5322956D}
+      <SOURCE WAVE
+        FILE "C:\Users\ASUS\Downloads\413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.61412698412698
+      SNAPOFFS 0
+      LENGTH 1.61412698412698
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {17084D61-6D2B-4A2C-8AD9-3DA0BEE29A36}
+      IID 2
+      NAME 413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F1066778-B838-446A-8941-0A89480DDEB8}
+      <SOURCE WAVE
+        FILE "C:\Users\ASUS\Downloads\413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav"
+      >
+    >
+    <ITEM
+      POSITION 3.22825396825397
+      SNAPOFFS 0
+      LENGTH 1.61412698412698
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1825BA85-D4DD-452D-B459-44217FA2A647}
+      IID 3
+      NAME 413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BE74FBBC-D4DE-42C1-94C4-E3E9DE0E99D8}
+      <SOURCE WAVE
+        FILE "C:\Users\ASUS\Downloads\413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav"
+      >
+    >
+  >
+  <EXTENSIONS
+  >
+>
