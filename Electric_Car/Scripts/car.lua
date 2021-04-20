@@ -100,8 +100,8 @@ GUI.New("Accelerator", "Button", {
     font = 3,
     col_txt = "txt",
     col_fill = "elm_frame",
-    mouseuphandler = stopAccelerate,
-    mousedownhandler = accelerate
+    mouseup_handler = stopAccelerate,
+    mousedown_handler = accelerate
 })
 
 GUI.New("Brake", "Button", {
@@ -114,8 +114,8 @@ GUI.New("Brake", "Button", {
     font = 3,
     col_txt = "txt",
     col_fill = "elm_frame",
-    mousedownhandler = brake,
-    mouseuphandler = stopBrake
+    mousedown_handler = brake,
+    mouseup_handler = stopBrake
 })
 
 --[[GUI.New("Quit", "Button", {
