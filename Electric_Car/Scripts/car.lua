@@ -29,6 +29,8 @@ sel_env = nil
 -- Variables related to the Tone Gate frequency
 min_frequency = 83
 max_frequency = 280
+freq_min_range = 20
+freq_max_range = 400
 
 function updateVelocity(newVelocity)
     velocity = newVelocity
@@ -46,6 +48,9 @@ function updateVelocity(newVelocity)
             TODO
                 Change the frequency according to the min_frequency, max_frequency, and velocity
         ]]--
+        local freq = velocity*(max_frequency - min_frequency)/(maxVelocity - minVelocity) + min_frequency
+        local baseline = freq/(freq_max_range - freq_min_range) 
+        reaper.GetSetAutomationItemInfo(sel_env, 0, "D_BASELINE", baseline, true)
     end
 end
 
@@ -212,8 +217,8 @@ frequency_slider = GUI.New("Frequency Range", "Slider", {
     y = 235,
     w = 96,
     caption = "Frequency Range",
-    min = 20,
-    max = 400,
+    min = freq_min_range,
+    max = freq_max_range,
     defaults = {83, 280},
     inc = 1,
     dir = "h",

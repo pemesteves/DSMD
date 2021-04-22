@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.27/win64" 1619089389
+<REAPER_PROJECT 0.1 "6.27/win64" 1619111882
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -14,13 +14,13 @@
   TIMEMODE 1 2 -1 25 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 6
+  CURSOR 0
   ZOOM 140.75532579213572 0 0
   VZOOMEX 17 0
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 25 100 40 1000 300 0 0 1 0 0
-  LOOP 0
+  LOOP 1
   LOOPGRAN 0 4
   RECORD_PATH "" ""
   <RECORD_CFG
@@ -56,8 +56,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0 0
-  SELECTION2 0 0
+  SELECTION 0 2.5
+  SELECTION2 0 2.5
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -68,6 +68,15 @@
   MASTER_VOLUME 1 0 -1 -1 1
   MASTER_FX 1
   MASTER_SEL 0
+  <POOLEDENV
+    ID 1
+    NAME "1"
+    SRCLEN 5.787846
+    LFO 0 0 50 1 0 0 0
+    PPT 0 0.0005263158 0 0 
+    PPT 0 0.5 0 0 
+    PPT 5.787843804989 0.5 0 0 
+  >
   <MASTERPLAYSPEEDENV
     EGUID {147A82D4-C1CD-46D8-8E94-389B8045C0C2}
     ACT 0 -1
@@ -92,7 +101,7 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 0.02630268 0 -1 -1 1
-    MUTESOLO 1 0 0
+    MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 0 0
@@ -131,9 +140,10 @@
       WAK 0 0
       BYPASS 0 0 0
       <JS remaincalm_org/tonegate ""
-        6 -24 75 0 1080 -20 1 5.95 90.91 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        6 -24 123 0 1080 -20 1 5.95 90.91 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
       FLOATPOS 817 249 670 360
+      PARMALIAS 2 Frequency
       FXID {5120649B-4786-473F-97BC-D92D68FCA658}
       <PARMENV 2 20 400 210
         EGUID {93EBE0A8-75A3-43AA-90F8-BCEC349C1F51}
@@ -142,10 +152,11 @@
         LANEHEIGHT 0 0
         ARM 1
         DEFSHAPE 0 -1 -1
-        PT 0 75.1 0
-        PT 1.500001 75.1 0
+        POOLEDENVINST 1 0 2.89392290249433 0 1 0 0.271053 1 1 0 0 1 0 0 0.012 0
+        PT 2.8939239 72.04186739 0
         PT 4.3939239 75.1 0
       >
+      PARM_TCP 2
       WAK 0 0
     >
     <ITEM
