@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.25/win64" 1617910012
+<REAPER_PROJECT 0.1 "6.27/win64" 1619088326
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -14,9 +14,9 @@
   TIMEMODE 1 2 -1 25 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 2
-  ZOOM 140.75532579213572 0 0
-  VZOOMEX 18 0
+  CURSOR 1.5
+  ZOOM 278.86532047079299 0 0
+  VZOOMEX 19 0
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 25 100 40 1000 300 0 0 1 0 0
@@ -56,8 +56,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 4.5 0
-  SELECTION2 4.5 0
+  SELECTION 0 1.5
+  SELECTION2 0 1.5
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -71,10 +71,10 @@
   <POOLEDENV
     ID 1
     NAME "1"
-    SRCLEN 1
+    SRCLEN 3
     LFO 0 0 0 0 0 0 0
-    PPT 0 0.3333405435 0 0 
-    PPT 0.999998 0.3333405435 0 0 
+    PPT 0 0.145 0 0 
+    PPT 2.999998 0.145 0 0 
   >
   <MASTERPLAYSPEEDENV
     EGUID {147A82D4-C1CD-46D8-8E94-389B8045C0C2}
@@ -99,7 +99,7 @@
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
-    VOLPAN 1 0 -1 -1 1
+    VOLPAN 0.02630268 0 -1 -1 1
     MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
@@ -118,96 +118,63 @@
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
-    <VOLENV2
-      EGUID {55010C4A-CA99-4A3B-BEFD-FE43190F3DFF}
-      ACT 1 -1
-      VIS 1 1 1
-      LANEHEIGHT 0 0
-      ARM 0
-      DEFSHAPE 0 -1 -1
-      VOLTYPE 1
-      POOLEDENVINST 1 0 0.5 0 1 0 0.5 1 1 0 0 14 0 0 0.012 0
-      POOLEDENVINST 1 1.61412698412698 0.5 0 1 0 0.5 1 1 0 0 15 0 0 0.012 0
-      POOLEDENVINST 1 3.22825396825397 0.5 0 1 0 0.5 1 1 0 0 16 0 0 0.012 0
-      PT 0.500001 1 0
-    >
     <FXCHAIN
-      WNDRECT 23 51 951 271
+      WNDRECT 785 217 951 419
       SHOW 0
-      LASTSEL 0
+      LASTSEL 2
       DOCKED 0
       BYPASS 0 0 0
       <JS Liteon/pinknoisegen ""
-        0.000000 -6.000000 -6.000000 0.000000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        1 -6 -6 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
       FLOATPOS 0 0 0 0
       FXID {7F7E005A-809C-437A-B8B7-854F9A5F619B}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS synthesis/tonegenerator ""
+        -3 -4 435 0 0 -59 1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8FA5C1EF-E15A-466C-A91E-1280778B18D5}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS remaincalm_org/tonegate ""
+        6 -24 75 0 1080 -20 1 5.95 90.91 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 817 249 670 360
+      FXID {5120649B-4786-473F-97BC-D92D68FCA658}
+      <PARMENV 2 20 400 210
+        EGUID {93EBE0A8-75A3-43AA-90F8-BCEC349C1F51}
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 1
+        DEFSHAPE 0 -1 -1
+        POOLEDENVINST 1 0 1.5 0 1 1 0.5 1 1 0 0 1 0 0 0.012 0
+        PT 1.500001 75.1 0
+      >
       WAK 0 0
     >
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 1.61412698412698
+      LENGTH 2.89392290249433
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0 0
       FADEOUT 1 0.01 0 1 0 0 0
       MUTE 0 0
       SEL 0
-      IGUID {B4B2013E-A722-4B4C-9B0F-EDD8AE34C430}
+      IGUID {39CC769F-085B-4E5B-940B-54C0705510D2}
       IID 1
-      NAME 413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav
+      NAME car.wav
       VOLPAN 1 0 1 -1
       SOFFS 0
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {F8779C0A-1495-4BC6-B417-D2AE5322956D}
+      GUID {EDEDE25A-2DA5-48D7-AD45-9CFD8A6B6275}
       <SOURCE WAVE
-        FILE "C:\Users\ASUS\Downloads\413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav"
-      >
-    >
-    <ITEM
-      POSITION 1.61412698412698
-      SNAPOFFS 0
-      LENGTH 1.61412698412698
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
-      MUTE 0 0
-      SEL 0
-      IGUID {17084D61-6D2B-4A2C-8AD9-3DA0BEE29A36}
-      IID 2
-      NAME 413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav
-      VOLPAN 1 0 1 -1
-      SOFFS 0
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {F1066778-B838-446A-8941-0A89480DDEB8}
-      <SOURCE WAVE
-        FILE "C:\Users\ASUS\Downloads\413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav"
-      >
-    >
-    <ITEM
-      POSITION 3.22825396825397
-      SNAPOFFS 0
-      LENGTH 1.61412698412698
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
-      MUTE 0 0
-      SEL 0
-      IGUID {1825BA85-D4DD-452D-B459-44217FA2A647}
-      IID 3
-      NAME 413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav
-      VOLPAN 1 0 1 -1
-      SOFFS 0
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {BE74FBBC-D4DE-42C1-94C4-E3E9DE0E99D8}
-      <SOURCE WAVE
-        FILE "C:\Users\ASUS\Downloads\413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx.wav"
+        FILE "Sounds\car.wav"
       >
     >
   >
