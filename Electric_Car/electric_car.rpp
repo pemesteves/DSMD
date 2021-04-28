@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.27/win64" 1619111882
+<REAPER_PROJECT 0.1 "6.27/win64" 1619617129
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -15,12 +15,12 @@
   VIDEO_CONFIG 0 0 256
   PANMODE 3
   CURSOR 0
-  ZOOM 140.75532579213572 0 0
+  ZOOM 198.12061739 0 0
   VZOOMEX 17 0
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 25 100 40 1000 300 0 0 1 0 0
-  LOOP 1
+  LOOP 0
   LOOPGRAN 0 4
   RECORD_PATH "" ""
   <RECORD_CFG
@@ -56,8 +56,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0 2.5
-  SELECTION2 0 2.5
+  SELECTION 0 1
+  SELECTION2 0 1
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -140,7 +140,7 @@
       WAK 0 0
       BYPASS 0 0 0
       <JS remaincalm_org/tonegate ""
-        6 -24 123 0 1080 -20 1 5.95 90.91 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        6 -24 152 0 1080 -20 1 5.95 90.91 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
       FLOATPOS 817 249 670 360
       PARMALIAS 2 Frequency
@@ -152,9 +152,11 @@
         LANEHEIGHT 0 0
         ARM 1
         DEFSHAPE 0 -1 -1
-        POOLEDENVINST 1 0 2.89392290249433 0 1 0 0.271053 1 1 0 0 1 0 0 0.012 0
-        PT 2.8939239 72.04186739 0
-        PT 4.3939239 75.1 0
+        POOLEDENVINST 1 0 2.89392290249433 0 1 0 0.347467 1 1 0 0 1 0 0 0.012 0
+        PT 0 72.04186739 0
+        PT 2.8939229 72.04186739 0
+        PT 2.8944229 73.35215127 0
+        PT 4.8944229 75.1 0
       >
       PARM_TCP 2
       WAK 0 0

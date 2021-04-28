@@ -16,7 +16,7 @@ GUI.req("Classes/Class - Slider.lua")()
 if missing_lib then return 0 end
 
 GUI.name = "Electric Car"
-GUI.x, GUI.y, GUI.w, GUI.h = 0, 0, 605, 275
+GUI.x, GUI.y, GUI.w, GUI.h = 0, 0, 605, 300
 GUI.anchor, GUI.corner = "mouse", "C"
 
 velocity = 0
@@ -29,8 +29,8 @@ sel_env = nil
 -- Variables related to the Tone Gate frequency
 min_frequency = 83
 max_frequency = 280
-freq_min_range = 20
-freq_max_range = 400
+freq_min_range = 50
+freq_max_range = 300
 
 function updateVelocity(newVelocity)
     velocity = newVelocity
@@ -42,14 +42,15 @@ function updateVelocity(newVelocity)
     GUI.Val(velocity_slider, {velocity})
 
     if sel_env ~= nil then        
-        --reaper.ShowConsoleMsg("Please select an envelope!\n")
+        --Changes the frequency according to the min_frequency, max_frequency, and velocity
 
-        --[[
-            TODO
-                Change the frequency according to the min_frequency, max_frequency, and velocity
-        ]]--
-        local freq = velocity*(max_frequency - min_frequency)/(maxVelocity - minVelocity) + min_frequency
-        local baseline = freq/(freq_max_range - freq_min_range) 
+        local baseline = 0
+
+        if velocity ~= 0 then
+            local freq = velocity*(max_frequency - min_frequency)/(maxVelocity - minVelocity) + min_frequency
+            baseline = freq/(freq_max_range - freq_min_range)
+        end
+
         reaper.GetSetAutomationItemInfo(sel_env, 0, "D_BASELINE", baseline, true)
     end
 end
@@ -169,18 +170,6 @@ GUI.New("Brake", "Button", {
     mouseup_handler = stopBrake
 })
 
---[[GUI.New("Quit", "Button", {
-    z = 11,
-    x = 500,
-    y = 15,
-    w = 75,
-    h = 30,
-    caption = "Quit",
-    font = 3,
-    col_txt = "txt",
-    col_fill = "elm_frame"
-})]]--
-
 GUI.New("get_env_btn", "Button", {
     z = 11,
     x = 192,
@@ -215,11 +204,11 @@ frequency_slider = GUI.New("Frequency Range", "Slider", {
     z = 11,
     x = 350,
     y = 235,
-    w = 96,
+    w = 200,
     caption = "Frequency Range",
     min = freq_min_range,
     max = freq_max_range,
-    defaults = {83, 280},
+    defaults = {min_frequency - freq_min_range, max_frequency - freq_min_range},
     inc = 1,
     dir = "h",
     font_a = 3,
