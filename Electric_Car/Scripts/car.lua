@@ -8,10 +8,11 @@ end
 loadfile(lib_path .. "Core.lua")()
 
 
+GUI.req("Classes/Class - Options.lua")()
 GUI.req("Classes/Class - Label.lua")()
 GUI.req("Classes/Class - Button.lua")()
 GUI.req("Classes/Class - Textbox.lua")()
-GUI.req("Classes/Class - Slider.lua")()
+GUI.req("Classes/Class - Slider.lua")() 
 -- If any of the requested libraries weren't found, abort the script.
 if missing_lib then return 0 end
 
@@ -24,7 +25,9 @@ minVelocity = 0
 maxVelocity = 60
 isAccelerating = false
 isBraking = false
+usingOSC = false
 sel_env = nil
+sel_track = nil
 
 -- Variables related to the Tone Gate frequency
 min_frequency = 83
@@ -87,9 +90,9 @@ function get_envelope()
         -- get the name of the selected envelope
         local _, env_name = reaper.GetEnvelopeName(sel_env, "")
         -- get the track that the envelope is attached to
-        local parent_track, _, _ = reaper.Envelope_GetParentTrack(sel_env)
+        sel_track, _, _ = reaper.Envelope_GetParentTrack(sel_env)
         -- get the name of the track
-        local _, track_name = reaper.GetSetMediaTrackInfo_String(parent_track, "P_NAME", "", false)
+        local _, track_name = reaper.GetSetMediaTrackInfo_String(sel_track, "P_NAME", "", false)
         GUI.Val("cur_env_txt", track_name .. " - " .. env_name)
     end
 end
@@ -106,7 +109,25 @@ function updateFrequencies()
     max_frequency = freq[2]
 end
 
-function main()      
+function updateAutomationMode()
+    if sel_env ~= nil then
+        if GUI.Val(osc_radio) == 1  then
+            usingOSC = false
+            reaper.SetTrackAutomationMode(sel_track, 0)
+        else
+            usingOSC = true
+            reaper.SetTrackAutomationMode(sel_track, 3)
+        end
+    end
+end
+
+function main()
+    updateAutomationMode()
+
+    if usingOSC then
+        return
+    end
+
     updateFrequencies()
 
     if isAccelerating then
@@ -220,6 +241,26 @@ frequency_slider = GUI.New("Frequency Range", "Slider", {
     show_values = true,
     cap_x = 0,
     cap_y = 0
+})
+
+osc_radio = GUI.New("OSC", "Radio", {
+    z = 11,
+    x = 403,
+    y = 112,
+    w = 96,
+    h = 80,
+    caption = "Use OSC",
+    optarray = {"NO", "YES"},
+    dir = "v",
+    font_a = 2,
+    font_b = 3,
+    col_txt = "txt",
+    col_fill = "elm_fill",
+    bg = "wnd_bg",
+    frame = false,
+    shadow = true,
+    swap = nil,
+    opt_size = 20
 })
 
 GUI.Init()

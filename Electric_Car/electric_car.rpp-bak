@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.27/win64" 1619617129
+<REAPER_PROJECT 0.1 "6.27/win64" 1620069003
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -15,7 +15,7 @@
   VIDEO_CONFIG 0 0 256
   PANMODE 3
   CURSOR 0
-  ZOOM 198.12061739 0 0
+  ZOOM 140.75532579213572 0 0
   VZOOMEX 17 0
   USE_REC_CFG 0
   RECMODE 1
@@ -73,8 +73,7 @@
     NAME "1"
     SRCLEN 5.787846
     LFO 0 0 50 1 0 0 0
-    PPT 0 0.0005263158 0 0 
-    PPT 0 0.5 0 0 
+    PPT 0 0 0 0 
     PPT 5.787843804989 0.5 0 0 
   >
   <MASTERPLAYSPEEDENV
@@ -96,7 +95,7 @@
   <PROJBAY
   >
   <TRACK {496C52C9-BDF0-4E2D-BF2B-EAD0760C3E29}
-    NAME 413641__djlprojects__metal-gear-solid-inspired-alert-surprise-sfx
+    NAME Car
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
@@ -106,7 +105,7 @@
     PLAYOFFS 0 1
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 -1
     FREEMODE 0
     SEL 1
     REC 0 0 1 0 0 0 0
@@ -140,7 +139,7 @@
       WAK 0 0
       BYPASS 0 0 0
       <JS remaincalm_org/tonegate ""
-        6 -24 152 0 1080 -20 1 5.95 90.91 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        6 -24 41 0 1080 -20 1 5.95 90.91 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
       FLOATPOS 817 249 670 360
       PARMALIAS 2 Frequency
@@ -152,12 +151,13 @@
         LANEHEIGHT 0 0
         ARM 1
         DEFSHAPE 0 -1 -1
-        POOLEDENVINST 1 0 2.89392290249433 0 1 0 0.347467 1 1 0 0 1 0 0 0.012 0
+        POOLEDENVINST 1 0 2.89392290249433 0 1 0 0.555267 1 1 0 0 1 0 0 0.012 0
         PT 0 72.04186739 0
         PT 2.8939229 72.04186739 0
         PT 2.8944229 73.35215127 0
         PT 4.8944229 75.1 0
       >
+      PARMLEARN 2 0 0 /orientation
       PARM_TCP 2
       WAK 0 0
     >
