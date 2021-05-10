@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.27/win64" 1620666740
+<REAPER_PROJECT 0.1 "6.27/win64" 1620675207
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -20,7 +20,7 @@
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
-  LOOP 0
+  LOOP 1
   LOOPGRAN 0 4
   RECORD_PATH "" ""
   <RECORD_CFG
@@ -77,13 +77,60 @@
   >
   <TEMPOENVEX
     EGUID {6CC21646-019C-45B2-822F-696A8B6BB3FA}
-    ACT 1 -1
+    ACT 0 -1
     VIS 1 0 1
     LANEHEIGHT 0 0
     ARM 0
     DEFSHAPE 1 -1 -1
   >
   <PROJBAY
+  >
+  <TRACK {71654AFF-9E31-4FAE-80C5-74769C82F516}
+    NAME bow_draw_arrow
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {71654AFF-9E31-4FAE-80C5-74769C82F516}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.5 0 1 0 0 0
+      FADEOUT 1 0.26 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {0F370806-0B75-48FD-9B58-E1BAAA94A609}
+      IID 2
+      NAME bow_draw_arrow.mp4
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E816258B-6652-4736-B7E6-175189386A47}
+      <SOURCE VIDEO
+        FILE "C:\Users\Amadeo\Downloads\bow_draw_arrow.mp4"
+      >
+    >
   >
   <TRACK {34137DA6-D2B8-47E0-B18E-11FDA586D546}
     NAME 511489__lydmakeren__fx-bow-arrow2-[AudioTrimmer.com]
@@ -98,7 +145,7 @@
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 0 0
@@ -124,7 +171,7 @@
       FADEIN 4 1.3 0 4 0 1 1
       FADEOUT 2 0.19 0 2 0 -1 -1
       MUTE 0 0
-      SEL 1
+      SEL 0
       IGUID {ECD7C31F-9620-46B7-AD09-41A45481C359}
       IID 1
       NAME 511489__lydmakeren__fx-bow-arrow2-[AudioTrimmer.com].wav
