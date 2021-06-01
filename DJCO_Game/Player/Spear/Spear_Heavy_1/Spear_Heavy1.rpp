@@ -27,11 +27,10 @@
   >
   <APPLYFX_CFG
   >
-  RENDER_FILE ""
-  RENDER_PATTERN ""
-  RENDER_FMT 0 2 0
+  RENDER_FILE "C:\Users\ASUS\Documents\FMOD Studio\tessa\Assets\Player\Spear\Spear_Heavy_1.wav"
+  RENDER_FMT 0 2 48000
   RENDER_1X 0
-  RENDER_RANGE 1 0 0 18 1000
+  RENDER_RANGE 2 0 0 18 1000
   RENDER_RESAMPLE 3 0 1
   RENDER_ADDTOPROJ 0
   RENDER_STEMS 0
@@ -43,6 +42,7 @@
   TAKELANE 1
   SAMPLERATE 44100 0 0
   <RENDER_CFG
+    ZXZhdxgAAA==
   >
   LOCK 1
   <METRONOME 6 2
@@ -200,5 +200,7 @@
         FILE "Spear_Heavy1.mp3" 1
       >
     >
+  >
+  <EXTENSIONS
   >
 >
