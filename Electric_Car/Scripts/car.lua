@@ -51,7 +51,7 @@ function updateVelocity(newVelocity)
 
         if velocity ~= 0 then
             local freq = velocity*(max_frequency - min_frequency)/(maxVelocity - minVelocity) + min_frequency
-            baseline = freq/(freq_max_range - freq_min_range)
+            baseline = (freq - freq_min_range)/(freq_max_range - freq_min_range)
         end
 
         reaper.GetSetAutomationItemInfo(sel_env, 0, "D_BASELINE", baseline, true)
