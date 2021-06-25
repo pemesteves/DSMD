@@ -32,8 +32,8 @@ sel_track = nil
 -- Variables related to the Tone Gate frequency
 min_frequency = 83
 max_frequency = 280
-freq_min_range = 50
-freq_max_range = 300
+freq_min_range = 20
+freq_max_range = 400
 
 function updateVelocity(newVelocity)
     velocity = newVelocity
