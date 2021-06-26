@@ -6,7 +6,7 @@ It should incorporate details about its aesthetics, concept, logic, and pertinen
 
 ## Packages needed
 
-- [Lokasenna_GUI v2](https://github.com/jalovatt/Lokasenna_GUI):
+- [Lokasenna_GUI v2](https://github.com/pemesteves/Lokasenna_GUI):
   - We've made some changes to this package so that we can take more advantage of the Button class
 
 ## How to Install
