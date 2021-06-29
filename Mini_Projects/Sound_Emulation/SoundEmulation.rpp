@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.28/win64" 1624959193
+<REAPER_PROJECT 0.1 "6.28/win64" 1624987778
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -14,9 +14,9 @@
   TIMEMODE 1 5 -1 30 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 0.5
+  CURSOR 1
   ZOOM 100 0 0
-  VZOOMEX 6 104
+  VZOOMEX 6 170
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -27,9 +27,8 @@
   >
   <APPLYFX_CFG
   >
-  RENDER_FILE ""
-  RENDER_PATTERN ""
-  RENDER_FMT 0 2 0
+  RENDER_FILE "C:\Users\HP\Desktop\DSMD\Mini_Projects\Sound_Emulation\Eduardo.wav"
+  RENDER_FMT 0 2 44100
   RENDER_1X 0
   RENDER_RANGE 1 0 0 18 1000
   RENDER_RESAMPLE 3 0 1
@@ -43,6 +42,7 @@
   TAKELANE 1
   SAMPLERATE 44100 0 0
   <RENDER_CFG
+    ZXZhdxgAAA==
   >
   LOCK 1
   <METRONOME 6 2
@@ -55,8 +55,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0.5 0.5
-  SELECTION2 0.5 0.5
+  SELECTION 4 4
+  SELECTION2 4 4
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -150,7 +150,7 @@
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
-    VOLPAN 1 0 -1 -1 1
+    VOLPAN 2.20554177603799 -0.504 -1 -1 1
     MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
@@ -177,11 +177,24 @@
       ARM 1
       DEFSHAPE 0 -1 -1
       VOLTYPE 1
-      PT 0 1 0
-      PT 0 1.0964782 0
-      PT 0.64 1.87206788 0
-      PT 2.15 0.30776206 0
-      PT 2.17 1 0
+      PT 0 1 0 0 1
+      PT 0 1.0964782 0 0 1
+      PT 0.64 1.87206788 0 0 1
+      PT 1.5 0.29391049 0 0 1
+      PT 2.17 1 0 0 1
+    >
+    <FXCHAIN
+      WNDRECT 21 49 1073 516
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS remaincalm_org/tonegate ""
+        0 0 120 0 1850 -6 50 10 100 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {B76E421F-EC1E-4902-9352-25A8F0D533A6}
+      WAK 0 0
     >
     <ITEM
       POSITION 0.67239583333333
@@ -230,10 +243,35 @@
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
+    <VOLENV2
+      EGUID {F712B231-B564-47B4-A1B0-E659906951DD}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      VOLTYPE 1
+      PT 0 1 0
+      PT 1.5 0.91201084 0
+      PT 3.05 0.03443797 0
+    >
+    <FXCHAIN
+      WNDRECT 21 49 1073 516
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS remaincalm_org/tonegate ""
+        -8 6 146 0 1140 -20 50 10 100 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {A65F8C93-A307-435E-B859-95B914E3C9F8}
+      WAK 0 0
+    >
     <ITEM
-      POSITION 2.14
+      POSITION 1.5
       SNAPOFFS 0
-      LENGTH 5.22577272727273
+      LENGTH 1.5
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0 0 1 0 0 0
@@ -253,8 +291,8 @@
       >
     >
   >
-  <TRACK {C2697173-AB2E-4263-A299-17BEF7D0C559}
-    NAME "(DU)328602__modularsamples__modular-hits-37 (Maybe for 'DU')"
+  <TRACK {18481DF6-F024-4D19-B0BF-D98086A07AE9}
+    NAME (R)417534__sulied__big-hard-rain-bysimon
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
@@ -273,7 +311,76 @@
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
-    TRACKID {C2697173-AB2E-4263-A299-17BEF7D0C559}
+    TRACKID {18481DF6-F024-4D19-B0BF-D98086A07AE9}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 2
+      SNAPOFFS 0
+      LENGTH 0.19
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5E12A81C-597D-480D-8F6E-BB00152D0ABF}
+      IID 10
+      NAME 417534__sulied__big-hard-rain-bysimon.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EF3B6DAF-4074-4980-883A-CDB1D6A93327}
+      <SOURCE WAVE
+        FILE "417534__sulied__big-hard-rain-bysimon.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.19
+      SNAPOFFS 0
+      LENGTH 0.19
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {78D0ABCD-82FB-443A-BE63-04D81C73946B}
+      IID 10
+      NAME 417534__sulied__big-hard-rain-bysimon.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {909318F2-48E8-4ECC-93A5-B56FF6847A6D}
+      <SOURCE WAVE
+        FILE "417534__sulied__big-hard-rain-bysimon.wav"
+      >
+    >
+  >
+  <TRACK {58544E7E-742F-497D-AD8D-CFD33BF34DD2}
+    NAME "(DU)328602__modularsamples__modular-hits-37 (Maybe for 'DU')"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 2.20554177603799 -0.504 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {58544E7E-742F-497D-AD8D-CFD33BF34DD2}
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
@@ -285,14 +392,31 @@
       ARM 1
       DEFSHAPE 0 -1 -1
       VOLTYPE 1
-      PT 0 1 0
-      PT 0 1.0964782 0
-      PT 4.5 1.80905306 0
-      PT 5.97760417 0.30776206 0
-      PT 5.99760417 1 0
+      PT 0 1 0 0 1
+      PT 0 1.0964782 0 0 1
+      PT 0.64 1.87206788 0 0 1
+      PT 0.67189583 1.76205129 0
+      PT 2.3795 1.01728948 0
+      PT 2.42980967 1.01679141 0
+      PT 2.43030967 1.76037299 0
+      PT 3.25791383 0.29391049 0 0 1
+      PT 3.92791383 1 0 0 1
+    >
+    <FXCHAIN
+      WNDRECT 21 49 1073 516
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS remaincalm_org/tonegate ""
+        0 0 120 0 1850 -6 50 10 100 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {D7E03667-E9A0-4D14-B908-946B9A4FC8F0}
+      WAK 0 0
     >
     <ITEM
-      POSITION 4.5
+      POSITION 2.43030966553288
       SNAPOFFS 0
       LENGTH 1.75791383219955
       LOOP 1
@@ -301,14 +425,14 @@
       FADEOUT 1 1.757914 0 1 0 0 0
       MUTE 0 0
       SEL 0
-      IGUID {CF64FAD6-D853-433B-BA1E-67EAF28067EA}
+      IGUID {3E1B24BB-CB75-4313-853A-3BEA30554F49}
       IID 4
       NAME "(DU)328602__modularsamples__modular-hits-37 (Maybe for 'DU').wav"
       VOLPAN 1 0 1 -1
       SOFFS 0
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {8EAD3877-730B-4404-AA5B-524DEA339B24}
+      GUID {0F5A3730-78B8-477F-A35B-487C5F65972A}
       <SOURCE WAVE
         FILE "(DU)328602__modularsamples__modular-hits-37 (Maybe for 'DU').wav"
       >
